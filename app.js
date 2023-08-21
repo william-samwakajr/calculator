@@ -1,22 +1,6 @@
 //declaring all the button variables
-let numInput1 = document.querySelector('.btn1');
-let numInput2 = document.querySelector('.btn2');
-let numInput3 = document.querySelector('.btn3');
-let numInput4 = document.querySelector('.btn4');
-let numInput5 = document.querySelector('.btn5');
-let numInput6 = document.querySelector('.btn6');
-let numInput7 = document.querySelector('.btn7');
-let numInput8 = document.querySelector('.btn8');
-let numInput9 = document.querySelector('.btn9');
-let numInput0 = document.querySelector('.btn0');
-let clear = document.querySelector('#clear');
-let del = document.querySelector('#del');
-let add = document.querySelector('.btna');
-let sub = document.querySelector('.btns');
-let div = document.querySelector('.btn÷');
-let mul = document.querySelector('.btnm');
-let eq = document.querySelector('.btne');
-let solution = document.querySelector('.scrn');
+let numInput = document.querySelectorAll('.btn');
+let displayValue = document.querySelector('.scrn');
 
 // input variables 
 let firstInput = '';
@@ -34,10 +18,14 @@ let subtract = function() {
 };
 let divide = function() {
     let ans = firstInput / SecondInput;
+    if (SecondInput == 0) {
+
+    }
     return ans;
 };
 let multiply = function() {
     let ans = firstInput * SecondInput;
+
     return ans;
 };
 
@@ -55,8 +43,4 @@ function operate() {
         finalAns = divide();
     }
     return finalAns
-}
-$("btn1").click(function() {
-    var fired_button = $("button").val();
-    alert(fired_button);
-});
+};
