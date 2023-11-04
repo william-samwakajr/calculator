@@ -36,78 +36,135 @@ numInput1.addEventListener("click", () => {
     } else {
         display.innerText += "1"
     }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput2.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "2"
+    } else {
+        display.innerText += "2"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput3.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "3"
+    } else {
+        display.innerText += "3"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput4.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "4"
+    } else {
+        display.innerText += "4"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput5.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "5"
+    } else {
+        display.innerText += "5"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput6.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "6"
+    } else {
+        display.innerText += "6"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput7.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "7"
+    } else {
+        display.innerText += "7"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput8.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "8"
+    } else {
+        display.innerText += "8"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+});
+numInput9.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "9"
+    } else {
+        display.innerText += "9"
+    }
+    if (display.innerText.length == 9) {
+
+    }
+})
+numInput0.addEventListener("click", () => {
+    if (display.innerText == 0) {
+        display.innerText = "0"
+    } else {
+        display.innerText += "0"
+    }
+    if (display.innerText.length == 9) {
+
+    }
 })
 
+clear.addEventListener("click", () => {
+        display.innerText = 0;
+    })
+    /*
+    del.addEventListener("click", () => {
+        let deletedCharString;
+        if (!display.innerText == 0) {
+            deletedCharString = display.innerText.replace(slice(display.innerText.length), "")
+            display.innerText = deletedCharString;
+        }
+    })
+    */
+add.addEventListener("click", () => {
+    if (!display.innerText == 0) {
+        display.innerText += "+"
+    }
+})
+sub.addEventListener("click", () => {
+    if (!display.innerText == 0) {
+        display.innerText += "-"
+    }
+})
+div.addEventListener("click", () => {
+    if (!display.innerText == 0) {
+        display.innerText += "/"
+    }
+})
+mul.addEventListener("click", () => {
+    if (!display.innerText == 0) {
+        display.innerText += "*"
+    }
+})
 
-
-
-/*
-clear.addEventListener('click', function() {
-    document.querySelector('.scrn').reset();
-
-});
-del.addEventListener('click', function() {
-
-});
-add.addEventListener('click', function() {
-    inputField2 += '+';
-    solution.innerHTML = inputField2;
-});
-sub.addEventListener('click', function() {
-    inputField2 += '-';
-    solution.innerHTML = inputField2;
-});
-div.addEventListener('click', function() {
-    inputField2 += '/';
-    solution.innerHTML = inputField2;
-});
-mul.addEventListener('click', function() {
-    inputField2 += '*';
-    solution.innerHTML = inputField2;
-});
-eq.addEventListener('click', function() {
-    inputField2 = eval(inputField2);
-    solution.innerText = inputField2;
-});
-numInput1.addEventListener('click', function() {
-    inputField2 += '1';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput2.addEventListener('click', function() {
-    inputField2 += '2';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput3.addEventListener('click', function() {
-    inputField2 += '3';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput4.addEventListener('click', function() {
-    inputField2 += '4';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput5.addEventListener('click', function() {
-    inputField2 += '5';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput6.addEventListener('click', function() {
-    inputField2 += '6';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput7.addEventListener('click', function() {
-    inputField2 += '7';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput8.addEventListener('click', function() {
-    inputField2 += '8';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput9.addEventListener('click', function() {
-    inputField2 += '9';
-    solution.innerHTML = parseInt(inputField2);
-});
-numInput0.addEventListener('click', function() {
-    inputField2 += '0';
-    solution.innerHTML = parseInt(inputField2);
-});
-
-*/
+eq.addEventListener("click", () => {
+    let result = eval(display.innerText);
+    display.innerText = result;
+})
